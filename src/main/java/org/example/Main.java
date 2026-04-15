@@ -8,6 +8,10 @@ Dupla:
 Aluno: Felipe Barretto
 Aluno: Lucas Rafael Silva Mendes
  */
+
+// can i get a kiss?
+// and can you make it last forever?
+
 public class Main {
     public static void main(String[] args) {
         //TP02Ex01.receberDoisValores();
