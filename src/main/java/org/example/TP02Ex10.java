@@ -2,7 +2,8 @@ package org.example;
 
 public class TP02Ex10 extends Exercicio{
 
-  public class Main {
+    public static void receberMatrizECalcularInversa() {
+        
         System.out.print("Digite a ordem da matriz quadrada (1-10): ");
         int n = scanner.nextInt();
 
@@ -105,4 +106,3 @@ public class TP02Ex10 extends Exercicio{
     }
 }
 
-}
