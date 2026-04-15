@@ -33,6 +33,6 @@ public class TP02Ex02 extends Exercicio{
         media = soma / 10;
         System.out.println("Maior: " + maior);
         System.out.println("Soma: " + soma);
-        System.out.printf("Média: %.2f", media);
+        System.out.printf("Média: %.2f %n", media);
     }
 }

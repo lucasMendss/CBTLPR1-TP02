@@ -15,6 +15,8 @@ public class TP02Ex05 extends Exercicio{
             }
         }
 
+        scanner.nextLine(); // consome a quebra de linha deixada pelo último nextInt()
+
         System.out.println("--------------------------------------");
         System.out.println("Matriz 3x2: ");
         for(int linha = 0; linha < matriz.length; linha++){

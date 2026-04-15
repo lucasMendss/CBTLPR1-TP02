@@ -9,40 +9,40 @@ package org.example;
 public class TP02Ex10 extends Exercicio{
 
     public static void receberMatrizECalcularInversa() {
+        while (true) {
+            System.out.println("------------------------------------------------------------------------------------------");
+            System.out.print("Digite a ordem da matriz quadrada (1-10): ");
+            int n = scanner.nextInt();
 
-        System.out.println("------------------------------------------------------------------------------------------");
-        System.out.print("Digite a ordem da matriz quadrada (1-10): ");
-        int n = scanner.nextInt();
-
-        if (n < 1 || n > 10) {
-            System.out.println("Ordem inválida. Use valores entre 1 e 10.");
-            scanner.close();
-            return;
-        }
-
-        double[][] matriz = new double[n][n];
-        double[][] inversa = new double[n][n];
-        int c = 1;
-
-        System.out.println("Digite " + (n * n) + " valores:");
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
-                System.out.print(c + "° valor: ");
-                matriz[i][j] = scanner.nextDouble();
-                c++;
+            if (n < 1 || n > 10) {
+                System.out.println("Ordem inválida. Use valores entre 1 e 10.");
+                continue;
             }
-        }
 
-        if (!calcularInversa(matriz, inversa)) {
-            System.out.println("\nMatriz singular. Não é possível calcular a inversa.");
-            scanner.close();
-            return;
-        }
+            double[][] matriz = new double[n][n];
+            double[][] inversa = new double[n][n];
+            int c = 1;
 
-        System.out.println("\nValores originais:");
-        imprimirMatriz(matriz);
-        System.out.println("\nMatriz inversa:");
-        imprimirMatriz(inversa);
+            System.out.println("Digite " + (n * n) + " valores:");
+            for (int i = 0; i < n; i++) {
+                for (int j = 0; j < n; j++) {
+                    System.out.print(c + "° valor: ");
+                    matriz[i][j] = scanner.nextDouble();
+                    c++;
+                }
+            }
+
+            if (!calcularInversa(matriz, inversa)) {
+                System.out.println("\nMatriz singular. Tente novamente com outra matriz.");
+                continue;
+            }
+
+            System.out.println("\nValores originais:");
+            imprimirMatriz(matriz);
+            System.out.println("\nMatriz inversa:");
+            imprimirMatriz(inversa);
+            break;
+        }
 
     }
 
