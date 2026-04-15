@@ -1,3 +1,10 @@
+/*
+Entrar via teclado com dez valores positivos. Consistir a digitação e enviar mensagem de erro,
+se necessário. Após a digitação, exibir:
+a. O maior valor;
+b. A soma dos valores;
+c. A média aritmética dos valores.
+ */
 package org.example;
 
 public class TP02Ex02 extends Exercicio{
@@ -7,6 +14,7 @@ public class TP02Ex02 extends Exercicio{
         double soma = 0;
         double media;
 
+        System.out.println("------------------------------------------------------------------------------------------");
         for(int i = 1; i <= 10; i++){
             System.out.println("Digite o " + i + "º valor: ");
             double num = scanner.nextDouble();

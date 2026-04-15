@@ -1,3 +1,10 @@
+/*
+Entrar via teclado com doze valores e armazená-los em uma matriz de ordem 3x4. Após a digitação dos valores solicitar
+uma constante multiplicativa, que deverá multiplicar cada valor matriz e armazenar o resultado em outra matriz de
+mesma ordem, nas posições correspondentes. Exibir as matrizes na tela, sob a forma matricial, ou seja,
+linhas por colunas.
+ */
+
 package org.example;
 
 public class TP02Ex08 extends Exercicio{
@@ -7,6 +14,7 @@ public class TP02Ex08 extends Exercicio{
     double[][] resultado = new double[3][4];
     int c = 1;
 
+    System.out.println("------------------------------------------------------------------------------------------");
     System.out.println("Digite 12 valores: ");
     for (int i = 0; i < 3; i++) {
       for (int j = 0; j < 4; j++) {

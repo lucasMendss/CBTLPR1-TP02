@@ -1,9 +1,16 @@
+/*
+Entrar com uma matriz de ordem MxM, onde a ordem também será escolhida pelo usuário, sendo que no máximo será de
+ordem 10 e quadrática. Após a digitação dos elementos, calcular e exibir a matriz inversa. Exibir as matrizes
+na tela, sob a forma matricial (linhas x colunas).
+ */
+
 package org.example;
 
 public class TP02Ex10 extends Exercicio{
 
     public static void receberMatrizECalcularInversa() {
-        
+
+        System.out.println("------------------------------------------------------------------------------------------");
         System.out.print("Digite a ordem da matriz quadrada (1-10): ");
         int n = scanner.nextInt();
 
