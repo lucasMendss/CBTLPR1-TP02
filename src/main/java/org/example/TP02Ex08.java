@@ -2,7 +2,7 @@ package org.example;
 
 public class TP02Ex08 extends Exercicio{
 
-  public static void main(String[] args) {
+  public static void receberEMultiplicarMatriz3x4versao2() {
     double[][] matriz = new double[3][4];
     double[][] resultado = new double[3][4];
     int c = 1;
